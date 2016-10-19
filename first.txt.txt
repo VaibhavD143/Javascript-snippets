@@ -1,2 +1,6 @@
 changed to 1
+<<<<<<< HEAD
 uploaded
+=======
+m going to change 
+>>>>>>> 0307b2b914200ed1da632770159c57ce9bdb69f8
