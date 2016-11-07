@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function fun(){
+	var randomColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+	document.getElementById('b1').style.backgroundColor=randomColor;
+}
+</script>
+</head>
+<body id="b1">
+<button type="Button" onclick="fun()" style="margin:150px;" >Click me!</button>
+
+</body>
+</html>
