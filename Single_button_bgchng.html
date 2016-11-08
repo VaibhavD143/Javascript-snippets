@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var tst=0;
+var a;
+function fun(){
+	var randomColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+	var e=document.getElementById("b1");
+	var b=document.getElementById("b2");
+	if(b.innerHTML === "STOP" )
+	{
+		if(tst === 0){
+		clearInterval(a);
+		tst=1;
+		b.innerHTML = "PLAY";
+		}
+	}
+	if(b.innerHTML === "PLAY")
+	{
+		if(tst === 0){
+		b.innerHTML = "STOP";
+		}
+	}
+	if(tst===0){ a=setInterval(fun,500);tst=1;}
+	
+	e.style.backgroundColor=randomColor;
+	
+	
+	
+}
+</script>
+</head>
+<body id="b1">
+<button id="b2" type="Button" onclick="tst=0;fun()" style="margin:150px;" >PLAY</button>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var tst=0;
+var a;
+function fun(){
+	if(tst===0){ a=setInterval(fun,500);tst=1;}
+	var randomColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+	var e=document.getElementById("b1");
+	e.style.backgroundColor=randomColor;
+
+	
+}
+</script>
+</head>
+<body id="b1">
+<button type="Button" onclick="tst=0;fun()" style="margin:150px;" >Click me!</button>
+<button type="Button" onclick="clearInterval(a)" style="margin:150px;" >Stop me!</button>
+</body>
+</html>
