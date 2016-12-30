@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/png" href="logo.png" width="50px" height="100px" />
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fcss1.css">
+<link rel="stylesheet" href="ffontcss.css">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('fbg.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+<!-- My css -->
+
+<!--.EveImg {
+    margin: 5px;
+    border: 1px solid #ccc;
+	float:left;
+    width: 180px;
+}
+
+.EveImg:hover {
+    border: 1px solid #777;
+}
+
+.EveImg img {
+    width: 300px;
+    height: 300px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+	width:300px;
+	height:auto;
+}
+-->
+.EveCell{
+	
+	text-align:center;
+	align:center;
+	border-collapse:collapse;
+	padding:50px;
+}
+.EveImg{
+	border:1px solid black;
+}
+.EveCell:hover {
+	border:2px solid gray;
+	text-align:center;
+	align:center;
+}
+
+a{
+	text-decoration:none;
+}
+
+.media {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding:10px;
+}
+
+
+.media__image { 
+	display: block;
+	
+	border:1px solid black;
+	
+	}
+
+.media__body {
+  background: rgba(38, 38, 38,0.6);
+  bottom: 0;
+  color: white;
+  font-size: 1em;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 3.75em 3em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.media__body:hover { opacity: 1; }
+.media__body:after,
+.media__body:before {
+  border: 1px solid rgba(230, 230, 230, 0.7);
+  bottom: 1em;
+  content: '';
+  left: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.6s 0.2s;
+  transition: 0.6s 0.2s;
+}
+
+.media__body:before {
+  border-bottom: none;
+  border-top: none;
+  left: 2em;
+  right: 2em;
+}
+
+.media__body:after {
+  border-left: none;
+  border-right: none;
+  bottom: 2em;
+  top: 2em;
+}
+
+.media__body:hover:after,
+.media__body:hover:before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.media__body h2 { margin-top: 0; }
+
+.media__body p { margin-bottom: 1.5em; }
+
+.webTeam_img{
+	float:left;
+	padding:4.3%;
+	background-color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo w3-padding-jumbo" style="width:40%;">
+    <img src="logo.png" style="float:left;" width="75px" height="110px"/>
+	<p style="position:relative;top:-40px;">Felicific '17</p>
+	<div style="position:relative;top:-50px;">
+	<marquee >
+		<h2>Welcome to Felicific '17</h2>
+	</marquee>
+	</div>
+  </div>
+  <div class="w3-display-topleft w3-padding-jumbo w3-xlarge">
+    <p><button onclick="document.getElementById('technical').style.display='block'" class="w3-btn w3-hover-light-grey"><img src="techicon.jpg" width=35 height=35 style="position:relative;top:2px;left:-5px;"/>Technical</button></p>
+	
+    
+	<p><button onclick="document.getElementById('conf').style.display='block'" class="w3-btn w3-hover-light-grey"><img src="conficon.png" width=35 height=28 style="position:relative;left:-3px;"/> Conference</button></p>
+	<p><button onclick="document.getElementById('webTeam').style.display='block'" class="w3-btn w3-hover-light-grey"><img src="webteamicon.png" width=35 height=35 style="position:relative;top:3.5px;left:-6px;"/>Web Team</button></p>
+	<p><button onclick="document.getElementById('about_us').style.display='block'" class="w3-btn w3-hover-light-grey"><img src="about_us.gif" width=28 height=28 style="position:relative;top:1px;left:-3px;"/> About us</button></p>
+<!--	<p><button onclick="document.getElementById('demo').style.display='block'" class="w3-btn w3-hover-light-grey">Demo</button></p>
+	<p><button onclick="document.getElementById('contact').style.display='block'" class="w3-btn w3-hover-light-grey">Contact</button></p> -->
+  </div>
+  <div style="position:relative;top:653px;float:right;" >
+	<img src="ddulogo.jpg" width=120px height=90px />
+  </div>
+    
+</div>
+
+<!-- WebTeam Modal -->
+<div id="webTeam" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('webTeam').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1 style="text-align:center;">WebTeam</h1>
+    </div>
+    <div class="w3-container">
+		<table width="100%"  >
+			<tr >
+				<td class="EveCell">
+					<a target="_blank" href="shinchan.jpg">
+					<img class=" EveImg" src="shinchan.jpg" alt="Trolltunga Norway" width="180" height="200" >
+					<p >Shinchan</p>
+					</a>
+				</td>
+				<td class="EveCell">
+					<a target="_blank" href="shinchan.jpg">
+					<img class="EveImg" src="shinchan.jpg" alt="Trolltunga Norway" width="180" height="200" >
+					<p>Shinchan</p>
+					</a>
+				</td>
+				<td class="EveCell">
+					<a target="_blank" href="shinchan.jpg">
+					<img class="EveImg" src="shinchan.jpg" alt="Trolltunga Norway" width="180" height="200">
+					<p>Shinchan</p>
+					</a>
+				</td>
+				
+			</tr>
+			<tr >
+				<td class="EveCell">
+					<a target="_blank" href="shinchan.jpg">
+					<img class="EveImg" src="shinchan.jpg" alt="Trolltunga Norway" width="180" height="200">
+					<p>Shinchan</p>
+					</a>
+				</td>
+				<td class="EveCell">
+					<a target="_blank" href="shinchan.jpg">
+					<img class="EveImg" src="shinchan.jpg" alt="Trolltunga Norway" width="180" height="200">
+					<p>Shinchan</p>
+					</a>
+				</td>
+				<td class="EveCell">
+					<a target="_blank" href="shinchan.jpg">
+					<img class="EveImg" src="shinchan.jpg" alt="Trolltunga Norway" width="180" height="200">
+					<p>Shinchan</p>
+					</a>
+				</td>
+				
+			</tr>
+		</table>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Conference Modal -->
+<div id="conf" class="w3-modal" >
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('conf').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>Conference</h1>
+    </div>
+    <div class="w3-container">
+		
+		<h5>GUJCOST sponsored National Conference on Recent Trends in Technology and Management (NCRTTM 2016) organize under the banner of FELICIFIC16 (National Level Annual Techo- Cultural Fest) organized by Dharmsinh Desai University. NCRTTM-16 provides anplatform for Graduate, Post graduate students, research scholars of Engineering, Technology, Management and industry professionals to deliberate, explore and contribute their research findings, and to discuss the latest developments in the fields of Engineering & Technology Experts will be delivering lectures on current topics of relevance in different streams of engineering </h5>
+		<marquee>
+				<span style="color:red;"><h4>Registrations are not open for Conference!</h4></span>
+			</marquee>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="form.asp" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" min="0" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-btn w3-light-grey w3-padding" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Technical Modal -->
+<div id="technical" class="w3-modal" >
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('technical').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>Technical</h1>
+    </div>
+    <div class="w3-container webTeam_img" >
+		<a target="_blank" href="./Insilico/index.html">
+		<div class="media">
+			
+			<img class="media__image" src="tech.jpg" width=200 height=200/>
+			
+			<div class="media__body">
+				
+				<h5 style="color:white">Insilico</h5>
+				
+			</div>
+		</div>
+		</a>
+    </div>
+    <div class="w3-container webTeam_img" >
+		<a href="./Technokshetra/index.html" target="_blank">
+		<div class="media">
+			<img class="media__image" src="tech.jpg" width=200 height=200/>
+			<div class="media__body">
+				
+				<h5 style="color:white">Technokshetra</h5>
+				
+			</div>
+		</div>		
+		</a>
+    </div>
+	<div class="w3-container webTeam_img" >
+		<a href="./IT/index.html" target="_blank">
+		<div class="media">
+			<img class="media__image" src="tech.jpg" width=200 height=200/>
+			<div class="media__body">
+				
+				<h5 style="color:white">IT</h5>
+				
+			</div>
+		</div>		
+		</a>
+    </div>
+	<div class="w3-container webTeam_img" style="float:none;">
+		<a href="./CH/index.html" target="_blank">
+		<div class="media">
+			<img class="media__image" src="tech.jpg" width=200 height=200/>
+			<div class="media__body">
+				
+				<h5 style="color:white;">CH</h5>
+				
+			</div>
+		</div>		
+		</a>
+    </div>
+	
+	
+  </div>
+  
+</div>
+
+<!-- About us Modal -->
+<div id="about_us" class="w3-modal" >
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('about_us').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>About Ddu</h1>
+    </div>
+    <div class="w3-container">
+		
+		<h5>jhfaj hdh fgds ghg g ga gg sghgf agg hajhgjk ghahjkh jkgfjk hjkh ajkhgjh jhj hjkgh kjh ajh jkhgruhgakja hjkh gjhajkh jkhgjh ajakhj khjkh jkhgjkh jkgahjkfhhjk hkjhah hg hah djbavbak gfkdjbskfa kjdhfkjh djkhjk hjk hakjhjkh jkhfjk hdjkhjk hj</h5>
+		
+    </div>
+    <div class="w3-container w3-black">
+      <h1>About Felicific</h1>
+    </div>
+    <div class="w3-container">
+      <h5>jhfaj hdh fgds ghg g ga gg sghgf agg hajhgjk ghahjkh jkgfjk hjkh ajkhgjh jhj hjkgh kjh ajh jkhgruhgakja hjkh gjhajkh jkhgjh ajakhj khjkh jkhgjkh jkgahjkfhhjk hkjhah hg hah djbavbak gfkdjbskfa kjdhfkjh djkhjk hjk hakjhjkh jkhfjk hdjkhjk hj</h5>
+      
+      
+    </div>
+    
+	
+  </div>
+  
+  
+</div>
+
+<!-- Demo Modal -->
+<div id="demo" class="w3-modal" >
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('demo').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>Insilico</h1>
+    </div>
+    <div class="w3-container">
+		
+		<h5>Fruit Salad <b>$2.50</b></h5>
+		
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Main Courses</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
+      
+      
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Fruit Salad <b>$2.50</b></h5>
+      
+    </div>
+	
+  </div>
+  
+  
+</div>
+
+
+</body>
+</html>
+
